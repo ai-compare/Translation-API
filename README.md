@@ -1,4 +1,4 @@
-# Translation-API
+# Translation - AI-Compare API
 ## Description
 This repositery provides code to implement [AI-Compare Translation API](https://www.ai-compare.com/text_apis/automatic_translation/). [AI-Compare Translation API](https://www.ai-compare.com/text_apis/automatic_translation/) allows to call Translation APIs from Google Cloud Platform Translate, AWS Translate, Microsoft Azure Cognitives Service Language, and IBM Watson Natural Language Translation. It permits to get results from these providers and compare the results.
 
