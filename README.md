@@ -28,6 +28,92 @@ response = requests.request("POST", url, headers=headers, data = payload, files 
 print(response.text.encode('utf8'))
 ```
 
+## Response example
+<details>
+<summary>
+
+```json
+{"result": [{"solution_name": "Ibm","execution_time": "7.103219","result": {"source_language": "English","target_language": "French","translated_text": "Le score d'un sentiment de documents indique l'émotion générale d'un document. L'ampleur du sentiment des documents indique la quantité de contenu émotionnel présente dans le document, et cette valeur est souvent proportionnelle à la longueur du document."},"api_response": {"translations": [{"translation": "Le score d'un sentiment de documents indique l'émotion générale d'un document. L'ampleur du sentiment des documents indique la quantité de contenu émotionnel présente dans le document, et cette valeur est souvent proportionnelle à la longueur du document."}],"word_count": 41,"character_count": 255}},{"solution_name": "Microsoft Azure","execution_time": "1.538659","result": {"source_language": "English","target_language": "French","translated_text": "La partition d’un sentiment de documents indique l’émotion globale d’un document. L’ampleur d’un sentiment de documents indique combien de contenu émotionnel est présent dans le document, et cette valeur est souvent proportionnelle à la longueur du document."},"api_response": [{"detectedLanguage": {"language": "en","score": 1},"translations": [{"text": "La partition d’un sentiment de documents indique l’émotion globale d’un document. L’ampleur d’un sentiment de documents indique combien de contenu émotionnel est présent dans le document, et cette valeur est souvent proportionnelle à la longueur du document.","to": "fr"}]}]},
+```
+
+</summary>
+
+```json
+{
+  "result": [
+    {
+      "solution_name": "Ibm",
+      "execution_time": "7.103219",
+      "result": {
+        "source_language": "English",
+        "target_language": "French",
+        "translated_text": "Le score d'un sentiment de documents indique l'émotion générale d'un document. L'ampleur du sentiment des documents indique la quantité de contenu émotionnel présente dans le document, et cette valeur est souvent proportionnelle à la longueur du document."
+      },
+      "api_response": {
+        "translations": [
+          {
+            "translation": "Le score d'un sentiment de documents indique l'émotion générale d'un document. L'ampleur du sentiment des documents indique la quantité de contenu émotionnel présente dans le document, et cette valeur est souvent proportionnelle à la longueur du document."
+          }
+        ],
+        "word_count": 41,
+        "character_count": 255
+      }
+    },
+    {
+      "solution_name": "Microsoft Azure",
+      "execution_time": "1.538659",
+      "result": {
+        "source_language": "English",
+        "target_language": "French",
+        "translated_text": "La partition d’un sentiment de documents indique l’émotion globale d’un document. L’ampleur d’un sentiment de documents indique combien de contenu émotionnel est présent dans le document, et cette valeur est souvent proportionnelle à la longueur du document."
+      },
+      "api_response": [
+        {
+          "detectedLanguage": {
+            "language": "en",
+            "score": 1
+          },
+          "translations": [
+            {
+              "text": "La partition d’un sentiment de documents indique l’émotion globale d’un document. L’ampleur d’un sentiment de documents indique combien de contenu émotionnel est présent dans le document, et cette valeur est souvent proportionnelle à la longueur du document.",
+              "to": "fr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "solution_name": "Amazon Web Services",
+      "execution_time": "1.161538",
+      "result": {
+        "source_language": "English",
+        "target_language": "French",
+        "translated_text": "Le score d'un sentiment de documents indique l'émotion globale d'un document. L'ampleur d'un sentiment de document indique la quantité de contenu émotionnel présent dans le document, et cette valeur est souvent proportionnelle à la longueur du document."
+      },
+      "api_response": {
+        "TranslatedText": "Le score d'un sentiment de documents indique l'émotion globale d'un document. L'ampleur d'un sentiment de document indique la quantité de contenu émotionnel présent dans le document, et cette valeur est souvent proportionnelle à la longueur du document.",
+        "SourceLanguageCode": "en",
+        "TargetLanguageCode": "fr",
+        "ResponseMetadata": {
+          "RequestId": "419bad32-d26b-458d-9eb3-967ce0c53546",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "x-amzn-requestid": "419bad32-d26b-458d-9eb3-967ce0c53546",
+            "cache-control": "no-cache",
+            "content-type": "application/x-amz-json-1.1",
+            "content-length": "331",
+            "date": "Wed, 13 May 2020 15:38:30 GMT"
+          },
+          "RetryAttempts": 0
+        }
+      }
+    }
+  ]
+}
+```
+
+</details>
+
 ## FAQ
 Here you can access to AI-Compare [FAQ](https://www.ai-compare.com/faq/).
 
